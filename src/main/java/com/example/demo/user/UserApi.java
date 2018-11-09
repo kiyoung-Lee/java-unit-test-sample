@@ -10,7 +10,7 @@ public class UserApi {
         if(user.getId() > 3){
             return user;
         }else {
-            return null;
+            throw new IllegalArgumentException("User is invalid!");
         }
     }
 }
